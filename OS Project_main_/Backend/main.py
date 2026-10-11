@@ -25,8 +25,8 @@ FRONTEND_DIR = BASE_DIR.parent / "Frontend"
 
 # Create FastAPI app
 app = FastAPI(
-    title=config.settings.APP_NAME,
-    version=config.settings.APP_VERSION,
+    title=config.settings.OS_NAME,
+    version=config.settings.OS_VERSION,
     description="CPU Scheduling Simulator API",
     docs_url="/docs" if config.settings.DEBUG else None,
     redoc_url="/redoc" if config.settings.DEBUG else None,

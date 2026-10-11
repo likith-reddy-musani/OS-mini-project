@@ -20,8 +20,8 @@ class Settings(BaseSettings):
     """Application settings loaded from environment variables."""
     
     # App settings
-    APP_NAME: str = "CPU Scheduling Simulator API"
-    APP_VERSION: str = "1.0.0"
+    OS_NAME: str = "CPU Scheduling Simulator API"
+    OS_VERSION: str = "1.0.0"
     DEBUG: bool = os.getenv("DEBUG", "false").lower() == "true"
     
     # Database settings

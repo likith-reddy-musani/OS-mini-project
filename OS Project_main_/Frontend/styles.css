@@ -231,7 +231,26 @@ html.dark .track-tag.matrix-tag { background: #182e20; color: #8ac09a; border-co
 html.reduce-motion *, html.reduce-motion *::before, html.reduce-motion *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
 .config-panel { border: 1px solid var(--line); background: var(--paper); margin-bottom: 22px; padding: 20px; } .config-heading { display: flex; justify-content: space-between; align-items: start; gap: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--line); } .config-heading h2 { display: flex; align-items: center; gap: 9px; } .config-heading h2 svg { width: 17px; color: var(--blue); } .config-heading p { margin: 7px 0 0; color: var(--muted); font-size: 12px; } .preset-control { display: flex; align-items: center; gap: 11px; min-width: min(410px, 45%); color: var(--muted); font-size: 12px; } .preset-control .select-wrap { flex: 1; } .config-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; padding-top: 20px; } .config-field { border: 1px solid var(--line); padding: 14px; min-width: 0; } .config-field:focus-within { border-color: var(--blue); } .config-field > label { display: flex; align-items: center; justify-content: space-between; gap: 6px; color: var(--muted); font-size: 12px; font-weight: 700; margin-bottom: 9px; } .config-field .select-wrap select, .config-field .input-wrap input { width: 100%; } .active-tag { padding: 3px 6px; color: var(--blue); background: var(--blue-soft); border-radius: 3px; font: 9px var(--mono); } .field-note { color: var(--muted); font: 10px var(--mono); font-weight: 400; } .config-panel + .control-grid { justify-content: flex-end; margin-top: -8px; border: 0; background: transparent; padding: 0 0 14px; }
 .process-name { font-weight: 700; } .workload-summary strong { color: var(--ink); font-weight: 500; }
-html.dark select, html.dark input { background: #1d293d; border-color: #35445b; color: var(--ink); } html.dark th { background: #1b2435; } html.dark td { border-color: var(--line); color: var(--muted); } html.dark .formula { background: #1b2435; } html.dark .control-grid { background: var(--paper); }
+html.dark select, html.dark input { background: #171918 !important; border-color: #35445b !important; color: var(--ink) !important; } 
+html.dark select option { background: #171918 !important; color: var(--ink) !important; }
+html.dark .config-field { background: #1b2435 !important; border-color: #35445b !important; }
+html.dark .config-panel { background: #171918 !important; }
+html.dark .preset-control { color: var(--muted); }
+html.dark th { background: #1b2435; } 
+html.dark td { border-color: var(--line); color: var(--muted); } 
+html.dark .formula { background: #1b2435; } 
+html.dark .control-grid { background: var(--paper); }
+html.dark #runningProcess, html.dark #readyQueueMonitor { background: #1b2435; border-color: var(--line); }
+html.dark .queue-chip { background: rgba(145, 169, 225, 0.12); border-color: #35445b; }
+html.dark .queue-empty { color: var(--muted); }
+html.dark .process-input { color: var(--ink); }
+html.dark .process-input:focus { background: #1d293d; border-color: var(--blue); }
+html.dark .state-pill.ready { background: rgba(93,144,110,.15); color: #8ac09a; }
+html.dark .state-pill.running { background: rgba(237, 144, 118, .15); color: #ed9076; }
+html.dark .state-pill.waiting { background: rgba(160,160,160,.12); color: #a4a9a3; }
+html.dark .state-pill.completed { background: rgba(145, 169, 225, .15); color: #91a9e1; }
+html.dark .state-pill.terminated { background: rgba(160,160,160,.12); color: #a4a9a3; }
+html.dark .state-pill.active { background: rgba(145, 169, 225, .15); color: #91a9e1; }
 .panel, .workspace-grid > * { min-width: 0; }
 .job-scheduler-panel { margin-bottom: 22px; overflow: visible; }
 .job-scheduler-heading { align-items: end; }
